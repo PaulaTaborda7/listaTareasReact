@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import gaiaLogo from './images/gaia-logo.png'
+import Tarea from './components/Tarea' //Importo el componente Tarea
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="aplicacion-tareas">
+      <div className='gaia-logo-contenedor'>
+        <img
+          src={gaiaLogo}
+          className="gaia-logo" />
+      </div>
+      {/* Now, the code of to-do list */}
+      <div className="todo-list">
+        <h1>
+          To-do List para hoy 🍎
+        </h1>
+        <Tarea texto="Aprender React"/> {/*Usamos el componente Tarea*/}
+      </div>
     </div>
   );
 }
