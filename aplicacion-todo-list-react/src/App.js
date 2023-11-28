@@ -1,6 +1,6 @@
 import './App.css';
 import gaiaLogo from './images/gaia-logo.png'
-import Tarea from './components/Tarea' //Importo el componente Tarea
+import ListaDeTareas from './components/ListaDeTareas';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <h1>
           To-do List para hoy 🍎
         </h1>
-        <Tarea texto="Aprender React"/> {/*Usamos el componente Tarea*/}
+        <ListaDeTareas /> {/*Usamos el componente ListaDeTareas*/}
       </div>
     </div>
   );

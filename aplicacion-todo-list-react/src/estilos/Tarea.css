@@ -12,6 +12,22 @@
     cursor: pointer;
 }
 
+/* Colores para las tareas - degradado*/
+/* Se usan pseudoclases */
+
+/* Cada 3 elementos, se va a repetir esa sencuencia de colores  */
+.tarea-contenedor:nth-child(3n + 1) {
+    background-color: rgb(7, 82, 53);
+}
+
+.tarea-contenedor:nth-child(3n + 2) {
+    background-color: rgb(10, 112, 73);
+}
+
+.tarea-contenedor:nth-child(3n + 3) {
+    background-color: rgb(14, 143, 94);
+}
+
 
 /* Propiedades para el texto */
 .tarea-texto {
@@ -23,9 +39,18 @@
     overflow-wrap: anywhere;
 }
 
-/* Propiedrades para los íconos */
+/* Propiedades para los íconos */
 .tarea-icono-x, .tarea-icono-edit  {
     width: 25px;
     height: auto;
     margin: 10px;
+}
+
+
+/* Propiedades para una tarea completada */
+
+.tarea-contenedor.completada {
+    background-color: rgb(14, 153, 107);
+    text-decoration: line-through;
+    
 }
