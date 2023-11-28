@@ -36,6 +36,12 @@ h1 {
     flex-wrap: wrap; 
 }
 
+.gaia-boton {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gaia-logo {
     width: 10%;
     height: auto;
