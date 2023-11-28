@@ -14,7 +14,7 @@ function ListaDeTareas() {
     const [tareaEditando, setTareaEditando] = useState(null);
     const [nuevoTexto, setNuevoTexto] = useState('');
 
-
+    // Función para agregar tarea
     const agregarTarea = tarea => {
         console.log(tarea);
         //Verificamos que la tarea no esté en blanco
@@ -27,6 +27,7 @@ function ListaDeTareas() {
         }
     };
 
+    // Función para eliminar tarea
     const eliminarTarea = id => {
         //Se actualizan las tareas, con el arreglo filtrado
         const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
@@ -34,6 +35,7 @@ function ListaDeTareas() {
 
     };
 
+    // Función para editar tarea
     const editarTarea = id => {
         const tareaAEditar = tareas.find(tarea => tarea.id === id);
 

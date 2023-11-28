@@ -27,7 +27,9 @@ function TareaFormulario(props) {
     return (
         <form 
             className='tarea-formulario'
-            onSubmit={manejarEnvio}>
+            onSubmit={manejarEnvio}> 
+            {/* Cuando se envía un formulario, se activa la función manejarEnvio, función que 
+            manda la nueva tarea (un objeto) al componente ListaDeTareas */}
             <input
                 className = 'tarea-input'
                 type = 'text'
