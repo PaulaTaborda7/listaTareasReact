@@ -98,8 +98,9 @@ function ListaDeTareas() {
                             type="text"
                             value={nuevoTexto}
                             onChange={e => setNuevoTexto(e.target.value)} //Se va actualizando el nuevo valor con cada cambio
+                            title ="Escribe aquí la tarea modificada"
                         />
-                        <button type="submit" className='tarea-edicion-boton'>Editar</button>
+                        <button type="submit" className='tarea-edicion-boton' title="Da clic aquí para editar">Editar</button>
                     </form>
                 )}
 

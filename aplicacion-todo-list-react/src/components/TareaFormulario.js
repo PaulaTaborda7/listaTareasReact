@@ -34,9 +34,10 @@ function TareaFormulario(props) {
                 placeholder ='Escribe un To-Do'
                 name = 'texto'
                 onChange={manejarCambio}
+                title= "Escribe aquí tu to-do"
             />
 
-            <button className='tarea-boton'>
+            <button className='tarea-boton' title="Da clic para agregar tu To-Do">
                 Agregar un To-Do  
             </button>
         </form>

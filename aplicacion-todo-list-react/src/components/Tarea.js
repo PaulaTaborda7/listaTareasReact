@@ -8,15 +8,15 @@ import { AiTwotoneEdit } from "react-icons/ai";
 
 function Tarea({ id, texto, completada, completarTarea, eliminarTarea, editarTarea }) {
     return (
-        <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'} > {/*Aquí asignamos una clase condicionada*/}
+        <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'} title="Este es tu To-Do ¡Da clic para completar!"> {/*Aquí asignamos una clase condicionada*/}
             <div className='tarea-texto' onClick={() => completarTarea(id)}>
                 {texto}
             </div>
-            <div onClick={() => editarTarea(id)}>
-                <AiTwotoneEdit className='tarea-icono-edit' />
+            <div>
+                <AiTwotoneEdit className='tarea-icono-edit' onClick={() => editarTarea(id)} title="Clic aquí para editar tu To-Do"/>
             </div>
-            <div onClick={() => eliminarTarea(id)}>
-                <AiTwotoneCloseCircle className='tarea-icono-x' />
+            <div>
+                <AiTwotoneCloseCircle className='tarea-icono-x' onClick={() => eliminarTarea(id)} title="Clic aquí para eliminar tu to-Do"/>
             </div>
 
     
