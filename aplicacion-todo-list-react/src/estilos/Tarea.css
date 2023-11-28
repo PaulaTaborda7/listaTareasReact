@@ -24,8 +24,8 @@
 }
 
 /* Propiedrades para los íconos */
-.tarea-icono-x .tarea-icono-edit {
+.tarea-icono-x, .tarea-icono-edit  {
     width: 25px;
-    height: 25px;
-    margin: 5px;
+    height: auto;
+    margin: 10px;
 }

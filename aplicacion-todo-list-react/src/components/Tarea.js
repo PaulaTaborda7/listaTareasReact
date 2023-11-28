@@ -1,6 +1,10 @@
 import React from 'react';
 import "../estilos/Tarea.css";
 // Agregamos el paquete de React Icons
+import { AiTwotoneCloseCircle } from "react-icons/ai";
+import { AiTwotoneEdit } from "react-icons/ai";
+
+
 
 function Tarea({ texto }) {
     return (
@@ -8,11 +12,11 @@ function Tarea({ texto }) {
             <div className='tarea-texto'>
                 {texto}
             </div>
-            <div className='tarea-icono-x'>
-                Eliminar
+            <div>
+                <AiTwotoneEdit className='tarea-icono-edit' />
             </div>
-            <div className='tarea-icono-edit'>
-                Editar
+            <div>
+                <AiTwotoneCloseCircle className='tarea-icono-x' />
             </div>
         </div>
     );
