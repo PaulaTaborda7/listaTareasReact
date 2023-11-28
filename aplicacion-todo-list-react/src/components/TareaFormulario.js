@@ -6,12 +6,11 @@ function TareaFormulario(props) {
 
     const [input, setInput] = useState('');
 
-    const manejarCambio = e => {
+    const manejarCambio = e => { //Esa e hace referencia a recibir un evento, es este caso recibe a OnChange
         setInput(e.target.value); //Así se extrae el valor de lo que el usuario escribe en el input
+    };
 
-    }
-
-    const manejarEnvio = e => {
+    const manejarEnvio = e => { //Esa e hace referencia a recibir un evento, es este caso recibe a OnSubmit (envío del form)
         // Para que toda la app no se cargue del todo, cuando se envíe el formulario:
         e.preventDefault();
         const tareaNueva = {
@@ -19,10 +18,10 @@ function TareaFormulario(props) {
             id: uuidv4(),
             texto: input,
             completada: false
-        }
+        };
 
         props.onSubmit(tareaNueva); //Manda la tarea a ListaTareas
-    }
+    };
 
 
     return (

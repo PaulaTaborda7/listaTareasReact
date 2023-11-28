@@ -50,7 +50,6 @@
 /* Propiedades para una tarea completada */
 
 .tarea-contenedor.completada {
-    background-color: rgb(14, 153, 107);
+    background-color: rgb(15, 8, 116);
     text-decoration: line-through;
-    
 }

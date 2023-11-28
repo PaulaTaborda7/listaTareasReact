@@ -8,7 +8,7 @@ import { AiTwotoneEdit } from "react-icons/ai";
 
 function Tarea({ id, texto, completada, completarTarea, eliminarTarea, editarTarea }) {
     return (
-        <div className={ completada ? 'tarea-contenedor completada' : 'tarea-contenedor'} > {/*Aquí asignamos una clase condicionada*/}
+        <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'} > {/*Aquí asignamos una clase condicionada*/}
             <div className='tarea-texto' onClick={() => completarTarea(id)}>
                 {texto}
             </div>
@@ -18,6 +18,8 @@ function Tarea({ id, texto, completada, completarTarea, eliminarTarea, editarTar
             <div onClick={() => eliminarTarea(id)}>
                 <AiTwotoneCloseCircle className='tarea-icono-x' />
             </div>
+
+    
         </div>
     );
 }
