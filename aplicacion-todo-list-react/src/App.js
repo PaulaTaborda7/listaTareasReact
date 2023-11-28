@@ -23,6 +23,7 @@ function TodoList() {
 
       <div className='gaia-logo-contenedor'>
         <img
+          alt="Logo de GAIA - Grupo de Ambientes Inteligentes Adaptativos"
           src={gaiaLogo}
           className="gaia-logo"
           title="Logo de GAIA - Grupo de Ambientes Inteligentes Adaptativos"

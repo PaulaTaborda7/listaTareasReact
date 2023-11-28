@@ -1,6 +1,6 @@
 import React from 'react';
 import '../estilos/VistaPDF.css';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import pdf from "../archivos/paulaandreatabordamontes.pdf" 
 
 const VistaPDF = () => {
