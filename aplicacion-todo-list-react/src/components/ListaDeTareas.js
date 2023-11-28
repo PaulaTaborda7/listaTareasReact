@@ -92,13 +92,14 @@ function ListaDeTareas() {
 
                 {/* Si tareaEditando es verdadero, se renderiza el formulario de edición */}
                 {tareaEditando && (
-                    <form onSubmit={guardarEdicion}>
+                    <form className='tarea-edicion-formulario' onSubmit={guardarEdicion}> {/*Este es el form para la edición de las tareas*/}
                         <input
+                            className='tarea-edicion-input'
                             type="text"
                             value={nuevoTexto}
-                            onChange={e => setNuevoTexto(e.target.value)}
+                            onChange={e => setNuevoTexto(e.target.value)} //Se va actualizando el nuevo valor con cada cambio
                         />
-                        <button type="submit">Guardar</button>
+                        <button type="submit" className='tarea-edicion-boton'>Editar</button>
                     </form>
                 )}
 
