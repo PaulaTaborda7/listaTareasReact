@@ -1,0 +1,35 @@
+.tareas-lista-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.tarea-edicion-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarea-edicion-input {
+    width: 350px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid rgb(129, 12, 81);
+    outline: none;
+}
+
+.tarea-edicion-boton {
+    padding: 16px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    background: rgb(129, 12, 81);
+    color: #fff;
+    text-transform: capitalize;
+}

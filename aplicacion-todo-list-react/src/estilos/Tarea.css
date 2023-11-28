@@ -1,0 +1,55 @@
+.tarea-contenedor {
+    width: 500px;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* Colores para las tareas - degradado*/
+/* Se usan pseudoclases */
+
+/* Cada 3 elementos, se va a repetir esa sencuencia de colores  */
+.tarea-contenedor:nth-child(3n + 1) {
+    background-color: rgb(7, 82, 53);
+}
+
+.tarea-contenedor:nth-child(3n + 2) {
+    background-color: rgb(10, 112, 73);
+}
+
+.tarea-contenedor:nth-child(3n + 3) {
+    background-color: rgb(14, 143, 94);
+}
+
+
+/* Propiedades para el texto */
+.tarea-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+/* Propiedades para los íconos */
+.tarea-icono-x, .tarea-icono-edit  {
+    width: 25px;
+    height: auto;
+    margin: 10px;
+}
+
+
+/* Propiedades para una tarea completada */
+
+.tarea-contenedor.completada {
+    background-color: rgb(15, 8, 116);
+    text-decoration: line-through;
+}
