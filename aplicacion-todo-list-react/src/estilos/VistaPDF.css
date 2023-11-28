@@ -1,0 +1,16 @@
+.conceptos-boton-atras {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-atras {
+    padding: 16px;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(44, 207, 167);
+    color: #000000;
+    text-transform: capitalize;
+}

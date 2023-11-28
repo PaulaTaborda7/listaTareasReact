@@ -8,12 +8,11 @@ function App() {
   return (
     <>
 
-      <div className="aplicacion-tareas">
-        <Routes>
-          <Route path="/" element={<TodoList />} />
-          <Route path="/insertar-pdf" element={<VistaPDF />} />
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route path="/" element={<TodoList />} />
+        <Route path="/insertar-pdf" element={<VistaPDF />} />
+      </Routes>
     </>
   );
 }
@@ -21,25 +20,25 @@ function App() {
 function TodoList() {
   return (
     <>
-      <div>
-        <div className='gaia-logo-contenedor'>
-          <img
-            src={gaiaLogo}
-            className="gaia-logo"
-            title="Logo de GAIA - Grupo de Ambientes Inteligentes Adaptativos"
-          />
-        </div>
 
-        <div className='boton-conceptos-contenedor'>
-          <Link to="/insertar-pdf">
-            <button className='conceptos-boton'>Ver punto A - preguntas conceptuales</button>
-          </Link>
-        </div>
+      <div className='gaia-logo-contenedor'>
+        <img
+          src={gaiaLogo}
+          className="gaia-logo"
+          title="Logo de GAIA - Grupo de Ambientes Inteligentes Adaptativos"
+        />
       </div>
 
-      <div className="todo-list">
-        <h1>Mi To-do List 🍎</h1>
-        <ListaDeTareas />
+      <div className='boton-conceptos-contenedor'>
+        <Link to="/insertar-pdf">
+          <button className='conceptos-boton'>Ver punto A - preguntas conceptuales</button>
+        </Link>
+      </div>
+      <div className='aplicacion-tareas'>
+        <div className="todo-list">
+          <h1>Mi To-do List 🍎</h1>
+          <ListaDeTareas />
+        </div>
       </div>
     </>
   );

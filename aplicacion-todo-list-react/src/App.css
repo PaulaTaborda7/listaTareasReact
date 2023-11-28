@@ -23,7 +23,6 @@ h1 {
 
 .aplicacion-tareas {
     display: flex;
-    flex-wrap: wrap; /*Permite que se ajusten los elementos*/
     justify-content: center;
     align-items: center;
 }
