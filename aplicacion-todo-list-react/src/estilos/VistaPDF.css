@@ -14,3 +14,9 @@
     color: #000000;
     text-transform: capitalize;
 }
+
+/* Estilos para la presentación del pdf */
+.pdf {
+    display: flex;
+    justify-content: center;
+}

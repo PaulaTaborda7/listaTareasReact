@@ -1,6 +1,7 @@
 import React from 'react';
 import '../estilos/VistaPDF.css';
 import { Route, Routes, Link } from 'react-router-dom';
+import pdf from "../archivos/paulaandreatabordamontes.pdf" 
 
 const VistaPDF = () => {
     return (
@@ -13,9 +14,10 @@ const VistaPDF = () => {
                 </Link>
             </div>
 
-            {/* Inserto el PDF con las respuestas a las preguntas conceptuales: */}
-            <embed src="/ruta/para/tu-archivo.pdf" type="application/pdf" width="100%" height="600px" />
-            <h2>Insertar PDF aquí</h2>
+            {/* Inserto el PDF con las respuestas a las preguntas conceptual */}
+            <div className='pdf'>
+                <embed src={pdf}  type="application/pdf" width="70%" height="600px" />
+            </div>
         </>
     );
 }
