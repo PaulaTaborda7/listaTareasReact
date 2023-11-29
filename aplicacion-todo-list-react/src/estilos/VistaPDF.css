@@ -13,6 +13,7 @@
     background: rgb(44, 207, 167);
     color: #000000;
     text-transform: capitalize;
+    margin-bottom: 7px;
 }
 
 /* Estilos para la presentación del pdf */
